@@ -12,6 +12,8 @@ import {
   white, darkBlack, fullBlack,
 } from 'material-ui/styles/colors';
 
+import CircularProgress from 'material-ui/CircularProgress';
+
 const muiTheme = getMuiTheme({
   fontFamily: 'Do Hyeon, sans-serif',
   palette: {
@@ -28,7 +30,9 @@ const muiTheme = getMuiTheme({
 
 const App = ({auth, ...props}) => {
 	switch (auth.status) {
-		case `init`: return <span>Authorizing</span>
+		case `init`: return <MuiThemeProvider muiTheme={muiTheme}>
+         <div style={{width: "100%", textAlign: "center", marginTop: "25%"}}><CircularProgress size={80} thickness={5} /></div>
+      </MuiThemeProvider>
 		case `failure`: return <span>{auth.message}</span>
 
 		default: return  <MuiThemeProvider muiTheme={muiTheme}>

@@ -168,7 +168,7 @@ class Chat extends React.Component {
 			 	<Card>
 
 			 	<CardMedia
-				     overlay={<CardTitle title="Image Title" subtitle="Uploaded by First Last Name" /> }>
+				     overlay={<CardTitle title="Snow Bunny Sale Ad" subtitle="Uploaded by First Last Name" /> }>
 				     <img src="https://images.unsplash.com/photo-1493838952631-2bce5dad8e54?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2c657455b24166fe47c308fc1d64866c&auto=format&fit=crop&w=1500&q=80"/>
 				    </CardMedia>
 
@@ -202,7 +202,7 @@ class Chat extends React.Component {
 								      rows={2}
 								      rowsMax={4}/>
 								</CardText>
-									<CardActions style={{textAlign: "right"}}>
+									<CardActions style={{textAlign: "right", background:"#fcf6f7"}}>
 										<FlatButton
 									        label="Add Comment"
 									        primary={true}

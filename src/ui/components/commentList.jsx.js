@@ -15,7 +15,7 @@ const CommentList = props => {
 									    <CardHeader
 									      title={text}
 									      subtitle={createdAt.toISOString()}/>
-									    <CardActions>
+									    <CardActions style={{background:"#fcf6f7"}}>
 									      <IconButton touch={true} iconStyle={{color: "#00aa8d"}}><ActionThumbUp /></IconButton>
 									       <IconButton touch={true} iconStyle={{color: "#bb1010"}}><ActionThumbDown/></IconButton>
 									    </CardActions>
