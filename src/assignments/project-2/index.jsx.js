@@ -165,7 +165,7 @@ class Chat extends React.Component {
 
 			    {this.state.hasUpload &&
 
-			 	<Card>
+			 	<Card style={{margin: "20px"}}>
 
 			 	<CardMedia
 				     overlay={<CardTitle title="Snow Bunny Sale Ad" subtitle="Uploaded by First Last Name" /> }>
