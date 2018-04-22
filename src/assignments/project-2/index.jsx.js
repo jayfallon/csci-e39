@@ -108,7 +108,7 @@ class Chat extends React.Component {
 		return <div className="hg">
 
 			<Dialog
-	          title="Add Contributors"
+	          title="Available Contributors"
 	          actions={dialogActions}
 	          modal={false}
 	          open={this.state.dialogOpen}
@@ -202,7 +202,7 @@ class Chat extends React.Component {
 								      rows={2}
 								      rowsMax={4}/>
 								</CardText>
-									<CardActions>
+									<CardActions style={{textAlign: "right"}}>
 										<FlatButton
 									        label="Add Comment"
 									        primary={true}
